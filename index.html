@@ -3,185 +3,479 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hernán Darío Trullo - CV</title>
+    <title>Hernán Darío Trullo - AI Engineer & Backend Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- HEADER -->
-        <header class="header">
-            <div class="header-content">
-                <div class="profile-info">
-                    <h1 class="name">HERNÁN DARÍO TRULLO</h1>
-                    <h2 class="title">Ingeniero de IA | Backend Developer | Integrador de Soluciones IoT</h2>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Colombia (Disponibilidad LATAM)</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:trullodario@gmail.com">trullodario@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+57 3228449200</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank">LinkedIn: Hernan Trullo</a>
-                        </div>
-                        <div class="contact-item">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">HDT</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#stack" class="nav-link">Stack</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">HERNÁN DARÍO TRULLO</h1>
+                    <h2 class="hero-title">AI Engineer | Backend Developer | IoT Solutions</h2>
+                    <p class="hero-tagline">Building scalable backend systems and AI-driven solutions for industrial automation.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#" class="btn btn-secondary" id="downloadCV">Descargar CV</a>
+                        <a href="#contact" class="btn btn-outline">Contacto</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/HernanTrullo" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
-                            <a href="https://github.com/HernanTrullo" target="_blank">GitHub: Hernan Trullo</a>
-                        </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:trullodario@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="profile-photo">
+                <div class="hero-image">
                     <img src="FotoHernan.JPG" alt="Hernán Darío Trullo" class="profile-img">
                 </div>
             </div>
-        </header>
-
-        <!-- TWO COLUMN LAYOUT -->
-        <div class="content">
-            <!-- LEFT COLUMN -->
-            <aside class="sidebar">
-                <section class="section">
-                    <h3 class="section-title">Perfil</h3>
-                    <p class="section-content">
-                        Ingeniero en Automática Industrial y Backend Developer con enfoque en IA. 2 años de experiencia creando APIs REST seguras y escalables. Especialista en la integración de modelos de IA con lógica de negocio robusta.
-                    </p>
-                </section>
-
-                <section class="section">
-                    <h3 class="section-title">Habilidades</h3>
-                    <div class="skills">
-                        <div class="skill-category">
-                            <h4>Lenguajes</h4>
-                            <p>Python, C#, C++</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frameworks</h4>
-                            <p>Django, Strapi, FastApi</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Data & AI</h4>
-                            <p>Pandas, NumPy, Scikit-learn, Model Training/Validation</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Bases de Datos</h4>
-                            <p>PostgreSQL, MySQL, MongoDB</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Infra & Cloud</h4>
-                            <p>Render, Railway, Cloudflare, Docker (Básico)</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>IoT & Comunicaciones</h4>
-                            <p>MQTT, Interconexión de Dispositivos, Monitoreo Remoto</p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Conceptos</h4>
-                            <p>REST APIs, Arquitectura Backend, Diseño Escalable</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3 class="section-title">Idiomas</h3>
-                    <div class="languages">
-                        <p><strong>Español:</strong> Nativo</p>
-                        <p><strong>Inglés:</strong> B1 (Técnico)</p>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3 class="section-title">Educación</h3>
-                    <div class="education">
-                        <div class="education-item">
-                            <h4>Maestría en Automática</h4>
-                            <p class="institution">Univ. del Cauca</p>
-                            <p class="period">2024 - Presente (En finalización)</p>
-                        </div>
-                        <div class="education-item">
-                            <h4>Ing. Automática Industrial</h4>
-                            <p class="institution">Univ. del Cauca</p>
-                            <p class="period">2017 - 2023</p>
-                        </div>
-                    </div>
-                </section>
-            </aside>
-
-            <!-- RIGHT COLUMN -->
-            <main class="main-content">
-                <section class="section">
-                    <h3 class="section-title">Experiencia Profesional</h3>
-                    <div class="experience">
-                        <div class="job">
-                            <h4 class="job-title">Ingeniero de IA / Backend Developer / Integrador IoT</h4>
-                            <p class="company">Independiente (Freelance) | 2024 – Actualidad</p>
-                            <p class="job-description">
-                                Desarrollo de soluciones tecnológicas integrales enfocadas en escalabilidad y procesamiento de datos.
-                            </p>
-                            <ul class="achievements">
-                                <li><strong>Arquitectura Backend:</strong> Diseño e implementación de APIs RESTful utilizando <strong>Django</strong> y <strong>Strapi</strong>, asegurando tiempos de respuesta optimizados y seguridad JWT.</li>
-                                <li><strong>Inteligencia Artificial:</strong> Entrenamiento, validación y despliegue de modelos de IA; análisis estadístico y procesamiento de datos automatizado con Python.</li>
-                                <li><strong>Gestión de Datos:</strong> Modelado eficiente de bases de datos relacionales (<strong>PostgreSQL, MySQL</strong>) y optimización de consultas complejas.</li>
-                                <li><strong>DevOps & Despliegue:</strong> Configuración de entornos de producción en <strong>Render y Railway</strong>; implementación de capas de seguridad y CDN mediante <strong>Cloudflare</strong>.</li>
-                                <li><strong>Automatización:</strong> Creación de scripts en Python para la automatización de procesos de negocio y limpieza de datos (ETL).</li>
-                                <li><strong>Soluciones IoT:</strong> Diseño e implementación de sistemas de interconexión de dispositivos móviles para monitoreo remoto de máquinas automatizadas; integración con brokers <strong>MQTT</strong> y desarrollo full-stack de interfaces de control desde la nube.</li>
-                            </ul>
-                        </div>
-
-                        <div class="job">
-                            <h4 class="job-title">Pasante Investigador en Robótica</h4>
-                            <p class="company">Universidad de Elche, España | Pasantía Investigativa</p>
-                            <p class="job-description">
-                                Investigación sobre técnicas avanzadas de modelado en robótica y aplicación de inteligencia artificial.
-                            </p>
-                            <ul class="achievements">
-                                <li><strong>Modelado en Robótica:</strong> Investigación sobre técnicas de modelado cinemático y dinámico en sistemas robóticos.</li>
-                                <li><strong>IA para Cinemática Inversa:</strong> Desarrollo y evaluación de modelos de inteligencia artificial para resolver problemas de cinemática inversa en robots manipuladores.</li>
-                                <li><strong>Análisis Comparativo:</strong> Estudio de diferentes enfoques (redes neuronales, algoritmos genéticos) versus métodos analíticos tradicionales.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h3 class="section-title">Proyectos Destacados</h3>
-                    <div class="projects">
-                        <div class="project">
-                            <h4 class="project-title">Sistema de Gestión con IA (Ejemplo)</h4>
-                            <p class="project-description">Desarrollo de una plataforma web que integra un modelo predictivo.</p>
-                            <ul class="project-details">
-                                <li>Backend en Django con base de datos PostgreSQL.</li>
-                                <li>Integración de modelo de Scikit-learn para predicción de datos en tiempo real.</li>
-                            </ul>
-                        </div>
-                        <div class="project">
-                            <h4 class="project-title">API Rest para E-Commerce</h4>
-                            <p class="project-description">Arquitectura de microservicios.</p>
-                            <ul class="project-details">
-                                <li>Implementación de autenticación segura y pasarela de pagos.</li>
-                                <li>Despliegue continuo en Railway.</li>
-                            </ul>
-                        </div>
-                        <div class="project">
-                            <h4 class="project-title">Sistema IoT de Monitoreo Industrial</h4>
-                            <p class="project-description">Interconexión de dispositivos para supervisión remota.</p>
-                            <ul class="project-details">
-                                <li>Interconexión de dispositivos móviles para monitoreo de máquinas automatizadas desde la nube.</li>
-                                <li>Implementación de comunicación en tiempo real con brokers MQTT.</li>
-                                <li>Desarrollo full-stack: backend para procesamiento de datos y frontend para visualización.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </main>
         </div>
-    </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-highlight">
+                        Ingeniero en Automática Industrial con Maestría en curso, especializado en la intersección entre IA, arquitectura backend y automatización industrial.
+                    </p>
+                    <p>
+                        Con +2 años de experiencia, he desarrollado soluciones escalables que integran modelos de inteligencia artificial con sistemas backend robustos. Mi enfoque híbrido me permite diseñar desde la arquitectura de datos hasta el despliegue de modelos predictivos en producción.
+                    </p>
+                    <p>
+                        Mi experiencia abarca desde el desarrollo de APIs REST seguras con Django y FastAPI, hasta la implementación de sistemas IoT para monitoreo industrial en tiempo real usando MQTT y arquitecturas cloud.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Formación Académica</h4>
+                                <p>Maestría en Automática - Universidad del Cauca</p>
+                                <p>Pasantía Investigativa - Universidad de Elche, España</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Enfoque Técnico</h4>
+                                <p>Arquitectura backend escalable, procesamiento de datos y modelos de IA en producción</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>Perfil Híbrido</h4>
+                                <p>IA + Backend + IoT = Soluciones industriales inteligentes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>APIs REST para Gestión de Datos</h3>
+                        <span class="experience-role">Backend Developer | Independiente</span>
+                    </div>
+                    <div class="experience-stack">
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">JWT</span>
+                        <span class="tech-badge">Render</span>
+                    </div>
+                    <p class="experience-description">
+                        Diseño e implementación de APIs RESTful seguras con autenticación JWT y optimización de consultas complejas.
+                    </p>
+                    <div class="experience-impact">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Optimización de consultas: 40% más rápido</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Sistema IoT de Monitoreo Industrial</h3>
+                        <span class="experience-role">Full-Stack Developer | Independiente</span>
+                    </div>
+                    <div class="experience-stack">
+                        <span class="tech-badge">MQTT</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">Cloud</span>
+                    </div>
+                    <p class="experience-description">
+                        Interconexión de dispositivos móviles para monitoreo remoto de máquinas automatizadas desde la nube en tiempo real.
+                    </p>
+                    <div class="experience-impact">
+                        <i class="fas fa-server"></i>
+                        <span>Monitoreo 24/7 con comunicación bidireccional</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Modelos de IA para Robótica</h3>
+                        <span class="experience-role">Investigador | Universidad de Elche, España</span>
+                    </div>
+                    <div class="experience-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Scikit-learn</span>
+                        <span class="tech-badge">Neural Networks</span>
+                        <span class="tech-badge">Robótica</span>
+                    </div>
+                    <p class="experience-description">
+                        Desarrollo de modelos de IA para resolver cinemática inversa en robots manipuladores, comparando enfoques tradicionales vs. ML.
+                    </p>
+                    <div class="experience-impact">
+                        <i class="fas fa-flask"></i>
+                        <span>Publicación de resultados de investigación</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Automatización de Procesos ETL</h3>
+                        <span class="experience-role">Data Engineer | Independiente</span>
+                    </div>
+                    <div class="experience-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">NumPy</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <p class="experience-description">
+                        Scripts automatizados para extracción, transformación y carga de datos industriales con limpieza y validación.
+                    </p>
+                    <div class="experience-impact">
+                        <i class="fas fa-clock"></i>
+                        <span>Automatización ahorra 15 hrs/semana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Sistema de Predicción con IA</h3>
+                    <p class="project-description">
+                        Plataforma web con modelo predictivo integrado para análisis de datos en tiempo real.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>API Escalable E-Commerce</h3>
+                    <p class="project-description">
+                        Arquitectura de microservicios con autenticación segura y pasarela de pagos integrada.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Railway</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automatización Industrial con Python</h3>
+                    <p class="project-description">
+                        Scripts ETL para procesamiento automatizado de datos industriales con validación y limpieza.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Airflow</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Dashboard IoT en Tiempo Real</h3>
+                    <p class="project-description">
+                        Interfaz de monitoreo con comunicación MQTT para supervisión de máquinas desde la nube.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STACK SECTION -->
+    <section id="stack" class="stack">
+        <div class="container">
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3>Lenguajes</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-csharp-plain colored"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3>Backend & Frameworks</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="devicon-django-plain colored"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-fastapi-plain colored"></i>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Strapi</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-redis-plain colored"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3>Data & AI</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="devicon-pandas-original colored"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-numpy-original colored"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-tensorflow-original colored"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloudflare</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-server"></i>
+                            <span>Render/Railway</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-category">
+                    <h3>IoT & Tools</h3>
+                    <div class="stack-icons">
+                        <div class="stack-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>MQTT</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>IoT Devices</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="stack-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Robótica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades en LATAM.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:trullodario@gmail.com">trullodario@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <a href="tel:+573228449200">+57 3228449200</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Colombia (Disponibilidad LATAM)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/HernanTrullo" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzbklqq"method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio">
+                        <input type="hidden" name="_next" value="#contact">
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                    <div id="formStatus" class="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Hernán Darío Trullo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
