@@ -1,481 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hernán Darío Trullo - AI Engineer & Backend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hernán Darío Trullo Muñoz: investigación en robótica y desarrollo de software.">
+  <title>Hernán Darío Trullo | Investigación y software</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">HDT</div>
-            <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#experience" class="nav-link">Experiencia</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#stack" class="nav-link">Stack</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Hernán Darío Trullo, inicio">HDT<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#perfiles">Perfiles</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#software">Software</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-name">HERNÁN DARÍO TRULLO</h1>
-                    <h2 class="hero-title">Ingeniero de AI | Desarrollador Backend | Integrados de Soluciones IoT</h2>
-                    <p class="hero-tagline">Construcción de sistemas backend escalables y soluciones impulsadas por IA para la automatización industrial.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                        <a href="#" class="btn btn-secondary" id="downloadCV">Descargar CV</a>
-                        <a href="#contact" class="btn btn-outline">Contacto</a>
-                    </div>
-                    <div class="hero-social">
-                        <a href="https://github.com/HernanTrullo" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:trullodario@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="FotoHernan.JPG" alt="Hernán Darío Trullo" class="profile-img">
-                </div>
-            </div>
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Ingeniería en automática · Robótica · Software</p>
+        <h1>Hernán Darío<br>Trullo Muñoz<span>.</span></h1>
+        <p class="lead">Ingeniero en Automática Industrial y magíster en Automática. Investigo cinemática inversa de robots y desarrollo software que integra información pública para avalúos automáticos.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#perfiles">Explorar mis perfiles</a>
+          <a class="button secondary" href="#contacto">Contactar</a>
         </div>
+      </div>
+      <figure class="portrait"><img src="FotoHernan.JPG" alt="Retrato de Hernán Darío Trullo Muñoz"></figure>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-highlight">
-                        Ingeniero en Automática Industrial con Maestría en curso, especializado en la intersección entre IA, arquitectura backend y automatización industrial.
-                    </p>
-                    <p>
-                        Con +2 años de experiencia, he desarrollado soluciones escalables que integran modelos de inteligencia artificial con sistemas backend robustos. Mi enfoque híbrido me permite diseñar desde la arquitectura de datos hasta el despliegue de modelos predictivos en producción.
-                    </p>
-                    <p>
-                        Mi experiencia abarca desde el desarrollo de APIs REST seguras con Django y FastAPI, hasta la implementación de sistemas IoT para monitoreo industrial en tiempo real usando MQTT y arquitecturas cloud.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Formación Académica</h4>
-                                <p>Maestría en Automática - Universidad del Cauca</p>
-                                <p>Pasantía Investigativa - Universidad de Elche, España</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Enfoque Técnico</h4>
-                                <p>Arquitectura backend escalable, procesamiento de datos y modelos de IA en producción</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-robot"></i>
-                            <div>
-                                <h4>Perfil Híbrido</h4>
-                                <p>IA + Backend + IoT = Soluciones industriales inteligentes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="pathways" id="perfiles" aria-labelledby="pathways-title">
+      <div class="pathways-heading">
+        <span class="index">DOS PERFILES · UNA TRAYECTORIA</span>
+        <h2 id="pathways-title">Elige el enfoque que buscas.</h2>
+        <p>Mi formación en automática conecta ambos caminos. Cada perfil reúne la experiencia, los resultados y la hoja de vida más relevantes para ese campo.</p>
+      </div>
+      <div class="pathway-grid">
+        <article class="pathway-card research-card">
+          <span class="pathway-number">01</span>
+          <p class="pathway-label">Academia e investigación</p>
+          <h3>Robótica e<br>investigación</h3>
+          <p>Cinemática inversa, teoría de tornillos, análisis comparativo de métodos y publicaciones científicas.</p>
+          <div class="pathway-links">
+            <a href="#investigacion">Conocer este perfil <span aria-hidden="true">↗</span></a>
+            <a href="CV_INVESTIGADOR_ES.pdf" download>Descargar CV</a>
+          </div>
+        </article>
+        <article class="pathway-card developer-card">
+          <span class="pathway-number">02</span>
+          <p class="pathway-label">Producto y tecnología</p>
+          <h3>Desarrollo de<br>software</h3>
+          <p>Aplicaciones con Django, Angular y PostgreSQL, scraping e integración de información pública.</p>
+          <div class="pathway-links">
+            <a href="#software">Conocer este perfil <span aria-hidden="true">↗</span></a>
+            <a href="CV_DESARROLLADOR_ES.pdf" download>Descargar CV</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experiencia</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>APIs REST para Gestión de Datos</h3>
-                        <span class="experience-role">Backend Developer | Independiente</span>
-                    </div>
-                    <div class="experience-stack">
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">JWT</span>
-                        <span class="tech-badge">Render</span>
-                    </div>
-                    <p class="experience-description">
-                        Diseño e implementación de APIs RESTful seguras con autenticación JWT y optimización de consultas complejas.
-                    </p>
-                    <div class="experience-impact">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Optimización de consultas: 40% más rápido</span>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Sistema IoT de Monitoreo Industrial</h3>
-                        <span class="experience-role">Full-Stack Developer | Independiente</span>
-                    </div>
-                    <div class="experience-stack">
-                        <span class="tech-badge">MQTT</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Cloud</span>
-                    </div>
-                    <p class="experience-description">
-                        Interconexión de dispositivos móviles para monitoreo remoto de máquinas automatizadas desde la nube en tiempo real.
-                    </p>
-                    <div class="experience-impact">
-                        <i class="fas fa-server"></i>
-                        <span>Monitoreo 24/7 con comunicación bidireccional</span>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Modelos de IA para Robótica</h3>
-                        <span class="experience-role">Investigador | Universidad de Elche, España</span>
-                    </div>
-                    <div class="experience-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Scikit-learn</span>
-                        <span class="tech-badge">Neural Networks</span>
-                        <span class="tech-badge">Robótica</span>
-                    </div>
-                    <p class="experience-description">
-                        Desarrollo de modelos de IA para resolver cinemática inversa en robots manipuladores, comparando enfoques tradicionales vs. ML.
-                    </p>
-                    <div class="experience-impact">
-                        <i class="fas fa-flask"></i>
-                        <span>Publicación de resultados de investigación</span>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>Automatización de Procesos ETL</h3>
-                        <span class="experience-role">Data Engineer | Independiente</span>
-                    </div>
-                    <div class="experience-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Pandas</span>
-                        <span class="tech-badge">NumPy</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                    <p class="experience-description">
-                        Scripts automatizados para extracción, transformación y carga de datos industriales con limpieza y validación.
-                    </p>
-                    <div class="experience-impact">
-                        <i class="fas fa-clock"></i>
-                        <span>Automatización ahorra 15 hrs/semana</span>
-                    </div>
-                </div>
-            </div>
+    <section class="profile" id="investigacion" aria-labelledby="research-title">
+      <div class="section-heading"><span class="index">01 / INVESTIGACIÓN</span><h2 id="research-title">Cinemática inversa y robótica industrial</h2></div>
+      <div class="profile-body">
+        <div>
+          <p>Mi trabajo se centra en manipuladores seriales, teoría de tornillos y evaluación de métodos de cinemática inversa. Comparo soluciones analíticas, numéricas y basadas en aprendizaje según precisión, tiempo de respuesta y diversidad de soluciones.</p>
+          <p>Realicé una pasantía de investigación en la Universidad Miguel Hernández de Elche y he ejercido docencia universitaria en control y sistemas dinámicos. Mi trabajo de maestría estudia algoritmos de cinemática inversa para robots seriales de base fija; su publicación en repositorio está pendiente.</p>
+          <div class="tags"><span>Teoría de tornillos</span><span>Cinemática inversa</span><span>Python</span><span>Robots seriales</span></div>
+          <a class="text-link" href="CV_INVESTIGADOR_ES.pdf" download>Descargar CV de investigación (PDF) ↗</a>
         </div>
+        <div class="detail-panel">
+          <h3>Publicaciones</h3>
+          <ol class="publications">
+            <li><a href="https://doi.org/10.31763/ijrcs.v5i3.1820" target="_blank" rel="noopener noreferrer">A Systematic Review of Inverse Kinematics Methods for Fixed-Base Serial Manipulators</a><small>International Journal of Robotics and Control Systems · 2025 · 5(3), 1808–1827</small></li>
+            <li><a href="https://doi.org/10.1007/978-3-031-98290-3_26" target="_blank" rel="noopener noreferrer">Software Tool for Control and Manipulation of a Real Puma Robot</a><small>Springer, CCIS 2393 · 2025 · SmartTech-IC 2024, Quito</small></li>
+          </ol>
+          <h3>Trabajos de grado</h3>
+          <p><a href="https://repositorio.unicauca.edu.co/handle/123456789/9472" target="_blank" rel="noopener noreferrer">Herramienta para el control y la manipulación de un robot PUMA real</a> · Universidad del Cauca, 2023.</p>
+          <p>Tesis de maestría y artículo derivado: aún no publicados.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Sistema de Predicción con IA</h3>
-                    <p class="project-description">
-                        Plataforma web con modelo predictivo integrado para análisis de datos en tiempo real.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>API Escalable E-Commerce</h3>
-                    <p class="project-description">
-                        Arquitectura de microservicios con autenticación segura y pasarela de pagos integrada.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">Railway</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Automatización Industrial con Python</h3>
-                    <p class="project-description">
-                        Scripts ETL para procesamiento automatizado de datos industriales con validación y limpieza.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Airflow</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Dashboard IoT en Tiempo Real</h3>
-                    <p class="project-description">
-                        Interfaz de monitoreo con comunicación MQTT para supervisión de máquinas desde la nube.
-                    </p>
-                    <div class="project-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">MQTT</span>
-                        <span class="tech-tag">WebSockets</span>
-                    </div>
-                </div>
-            </div>
+    <section class="profile software" id="software" aria-labelledby="software-title">
+      <div class="section-heading"><span class="index">02 / SOFTWARE</span><h2 id="software-title">Aplicaciones que convierten datos en decisiones</h2></div>
+      <div class="profile-body">
+        <div>
+          <p>Desde junio de 2025 trabajo como desarrollador de software en HCC Financial Group, en un sistema privado de avalúos automáticos. Desarrollo backend con Python y Django, frontend con Angular y persistencia en PostgreSQL.</p>
+          <p>He implementado extracción de datos inmobiliarios e interoperabilidad con servicios públicos para consultar e integrar información pública en el flujo de avalúos. Mi formación en automática aporta un enfoque de modelado, validación y mejora continua.</p>
+          <div class="tags"><span>Python</span><span>Django</span><span>Angular</span><span>PostgreSQL</span><span>Scraping</span><span>Interoperabilidad</span></div>
+          <a class="text-link" href="CV_DESARROLLADOR_ES.pdf" download>Descargar CV de desarrollo (PDF) ↗</a>
         </div>
+        <div class="detail-panel">
+          <h3>Sistema de avalúos automáticos</h3>
+          <ul>
+            <li>Aplicación web para consulta y cálculo de avalúos.</li>
+            <li>Integración de fuentes públicas e información inmobiliaria mediante servicios y scraping.</li>
+            <li>Desarrollo de interfaz, lógica de negocio y modelo de datos.</li>
+          </ul>
+          <h3>Formación</h3>
+          <p>Maestría en Automática · Universidad del Cauca, 2024–2026.</p>
+          <p>Ingeniería en Automática Industrial · Universidad del Cauca, 2017–2023.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- STACK SECTION -->
-    <section id="stack" class="stack">
-        <div class="container">
-            <h2 class="section-title">Stack Tecnológico</h2>
-            <div class="stack-grid">
-                <div class="stack-category">
-                    <h3>Lenguajes</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="devicon-python-plain colored"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-csharp-plain colored"></i>
-                            <span>C#</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-cplusplus-plain colored"></i>
-                            <span>C++</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-javascript-plain colored"></i>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-category">
-                    <h3>Backend & Frameworks</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="devicon-django-plain colored"></i>
-                            <span>Django</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-fastapi-plain colored"></i>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-plug"></i>
-                            <span>Strapi</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-nodejs-plain colored"></i>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-category">
-                    <h3>Bases de Datos</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="devicon-postgresql-plain colored"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-mysql-plain colored"></i>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-mongodb-plain colored"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-redis-plain colored"></i>
-                            <span>Redis</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-category">
-                    <h3>Data & AI</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="devicon-pandas-original colored"></i>
-                            <span>Pandas</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-numpy-original colored"></i>
-                            <span>NumPy</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-brain"></i>
-                            <span>Scikit-learn</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-tensorflow-original colored"></i>
-                            <span>TensorFlow</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-category">
-                    <h3>DevOps & Cloud</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="devicon-docker-plain colored"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-git-plain colored"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloudflare</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-server"></i>
-                            <span>Render/Railway</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-category">
-                    <h3>IoT & Tools</h3>
-                    <div class="stack-icons">
-                        <div class="stack-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>MQTT</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-microchip"></i>
-                            <span>IoT Devices</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="devicon-react-original colored"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="stack-item">
-                            <i class="fas fa-robot"></i>
-                            <span>Robótica</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="contact" id="contacto">
+      <span class="index">CONTACTO</span>
+      <h2>Conversemos sobre robótica<br>o desarrollo de software.</h2>
+      <a class="button light" href="mailto:trullodario@gmail.com">trullodario@gmail.com ↗</a>
+      <div class="social"><a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/HernanTrullo" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://orcid.org/0009-0009-8532-8737" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0002205074" target="_blank" rel="noopener noreferrer">CvLAC</a></div>
     </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-info-section">
-                    <h3>¿Tienes un proyecto en mente?</h3>
-                    <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades en LATAM.</p>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:trullodario@gmail.com">trullodario@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Teléfono</h4>
-                                <a href="tel:+573228449200">+57 3228449200</a>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Ubicación</h4>
-                                <p>Colombia (Disponibilidad LATAM)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/HernanTrullo" target="_blank" class="social-btn">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/hernan-trullo-87111b210/" target="_blank" class="social-btn">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form-section">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzbklqq"method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Portfolio">
-                        <input type="hidden" name="_next" value="#contact">
-                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
-                    </form>
-                    <div id="formStatus" class="form-status"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Hernán Darío Trullo. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  </main>
+  <footer>© 2026 Hernán Darío Trullo Muñoz · Colombia</footer>
 </body>
 </html>
